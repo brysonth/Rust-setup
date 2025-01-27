@@ -1,0 +1,16 @@
+{
+    "name": "Rust Dev Container",
+    "image": "rust:latest",
+    "features": {
+      "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+    },
+    "postCreateCommand": "cargo init && cargo build",
+    "customizations": {
+      "vscode": {
+        "settings": {},
+        "extensions": [
+          "rust-lang.rust-analyzer"
+        ]
+      }
+    }
+  }
